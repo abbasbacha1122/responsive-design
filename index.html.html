@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+
+      <script>
+        function formvalid(){
+          
+
+            // var userName = document.form1.userName.value
+            var userName= (document.getElementById('userName').value);
+            var password = (document.getElementById('password').value);
+
+            // var password = document.form1.password.value
+
+            if(userName.length == 0)
+            {
+                alert("ID Is Empty / Invalid")
+            }
+
+            if(password.length < 8)
+            {
+                alert("Password Lenght Must Be 8 Character long ")
+            }
+        }
+</script>
+
+
+</head>
+<body>
+    <form  name="form1">
+        <h1>Login Form</h1>
+
+        <div class="sec">User Name : <input type="text" id="userName" > </div>
+          
+          
+          <br><br>
+          
+        <div class="sec">Password: <input type="password" id="password"></div>
+          
+  
+          <br><br>
+        
+    
+        <div class="sec"><input type="button" onclick="formvalid()" value="OK" ></div>
+          
+  
+          <br /><br />
+  
+         
+      </form>
+    
+</body>
+</html>
